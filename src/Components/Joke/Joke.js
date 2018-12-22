@@ -3,8 +3,8 @@ import React from 'react'
 const Joke = (props) => {
   return (
     <div>
-      <p>Question: {props.question}</p>
-      <p>Answer: {props.punchLine}</p>
+      <h3 style={{ display: props.question ? "block" : "none" }}>Question: {props.question}</h3>
+      <h3 style={{ display: props.punchLine ? "block" : "none" }}>Answer: {props.punchLine}</h3>
     </div>
   )
 }
